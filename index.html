@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<title>Plataforma de Projetos Criativos</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sa
+ns:wght@400;600&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+awesome/6.0.0/css/all.min.css"
+
+integrity="sha512-
+9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6
+qOPnzFeg=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+<header class="cabecalho-principal">
+<div class="container-principal">
+<a href="/" class="logo-link">
+<img src="img/01-img-teste.jpg" alt="Logotipo da Plataforma" class="logo-site">
+<span class="titulo-logo">Plataforma Criativa</span>
+
+</a>
+<input type="checkbox" id="menu-hamburguer">
+<label for="menu-hamburguer" class="botao-menu-mobile" aria-label="Abrir Menu">
+<i class="fas fa-bars"></i>
+</label>
+<nav class="navegacao-principal">
+<ul class="lista-menu">
+<li><a href="/" class="link-menu ativo">Início</a></li>
+<li><a href="#explore" class="link-menu">Projetos Inspiradores</a></li>
+<li><a href="#informativa" class="link-menu">Sobre a Iniciativa</a></li>
+<li><a href="#formulario-ideias" class="link-menu">Compartilhe sua Ideia</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="secao-apresentacao secao-hero">
+<div class="container-principal">
+<div class="conteudo-hero">
+<h1 class="titulo-hero">Inspirando a Criatividade e a Inovação</h1>
+<p class="subtitulo-hero">Descubra projetos incríveis e compartilhe suas próprias
+ideias para um futuro melhor.</p>
+<a href="#explore" class="botao-principal botao-hero">Explore Projetos</a>
+<a href="#formulario-ideias" class="botao-secundario botao-hero">Compartilhe
+sua Ideia</a>
+</div>
+<div class="imagem-hero">
+
+<img src="img/01-img-teste.jpg" alt="Ilustração abstrata de ideias">
+</div>
+</div>
+</section>
+
+<section class="secao-conteudo secao-destaque-projetos" id="explore">
+<div class="container-principal">
+<h2 class="titulo-secao">Projetos em Destaque</h2>
+<p class="descricao-secao">Conheça alguns projetos criativos que estão gerando
+impacto e inspirando novas soluções.</p>
+<div class="lista-projetos-destaque">
+<div class="card-projeto">
+
+<img src="img/01-img-teste.jpg" alt="Imagem do projeto 1" class="imagem-
+projeto">
+
+<h3 class="titulo-projeto">Projeto Inovador 1</h3>
+<p class="descricao-projeto">Uma breve descrição sobre a ideia e os objetivos
+deste projeto.</p>
+<a href="link1.html" class="link-projeto">Ver Projeto</a>
+</div>
+<div class="card-projeto">
+
+<img src="img/01-img-teste.jpg" alt="Imagem do projeto 2" class="imagem-
+projeto">
+
+<h3 class="titulo-projeto">Solução Criativa 2</h3>
+<p class="descricao-projeto">Detalhes sobre a abordagem e os resultados
+alcançados neste projeto.</p>
+<a href="/projeto/2" class="link-projeto">Ver Projeto</a>
+</div>
+<div class="card-projeto">
+
+<img src="img/01-img-teste.jpg" alt="Imagem do projeto 3" class="imagem-
+projeto">
+
+<h3 class="titulo-projeto">Ideia Transformadora 3</h3>
+<p class="descricao-projeto">O conceito por trás deste projeto e seu potencial de
+impacto.</p>
+<a href="/projeto/3" class="link-projeto">Ver Projeto</a>
+</div>
+</div>
+<div class="centralizar-botao">
+<a href="/projetos" class="botao-secundario">Explore Mais Projetos</a>
+</div>
+</div>
+</section>
+
+<section class="secao-informativa secao-sobre-nos" id="informativa">
+<div class="container-principal">
+<div class="imagem-informativa">
+<img src="img/01-img-teste.jpg" alt="Ilustração de pessoas colaborando">
+</div>
+<div class="texto-informativo">
+<h2 class="titulo-secao">Sobre a Nossa Iniciativa</h2>
+<p class="paragrafo-informativo">Esta plataforma é um espaço dedicado a fomentar a
+criatividade, a inovação e a colaboração em projetos diversos. Nosso objetivo é conectar
+mentes curiosas e inspirar a criação de soluções para os desafios do presente e do futuro.</p>
+<p class="paragrafo-informativo">Acreditamos no poder das ideias e no potencial de
+cada indivíduo para contribuir com projetos significativos. Explore, inspire-se e junte-se a esta
+comunidade de inovadores!</p>
+<a href="/sobre" class="botao-terciario">Saiba Mais sobre Nós</a>
+</div>
+</div>
+</section>
+
+<section class="secao-acao secao-compartilhe-ideia" id="formulario-ideias">
+<div class="container-principal">
+<h2 class="titulo-secao">Compartilhe sua Ideia!</h2>
+<p class="descricao-secao">Tem uma ideia brilhante? Compartilhe conosco e veja
+como ela pode inspirar outros!</p>
+<form class="formulario-contato" action="/enviar-ideia" method="POST">
+<div class="campo-formulario">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" name="nome" required>
+</div>
+<div class="campo-formulario">
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="campo-formulario">
+<label for="mensagem">Sua Ideia/Mensagem:</label>
+<textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+</div>
+<button type="submit" class="botao-principal">Enviar Ideia</button>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="rodape-principal">
+<div class="container-principal">
+<div class="info-rodape">
+
+<p>© 2025 Plataforma Criativa. Todos os direitos reservados.</p>
+<nav class="navegacao-rodape">
+<ul class="lista-rodape">
+<li><a href="/termos" class="link-rodape">Termos de Uso</a></li>
+
+</ul>
+</nav>
+</div>
+<div class="social-rodape">
+<a href="#" target="_blank" class="link-social"><i class="fab fa-instagram"></i></a>
+
+<a href="#" target="_blank" class="link-social"><i class="fab fa-facebook-
+square"></i></a>
+
+</div>
+</div>
+</footer>
+
+</body>
+
+</html>
